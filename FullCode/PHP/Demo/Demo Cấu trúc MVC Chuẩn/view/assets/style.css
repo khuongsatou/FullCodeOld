@@ -1,0 +1,55 @@
+
+/*Trang register_view*/
+
+.search-center{
+	position: relative;
+	left:550px;
+}
+#login{
+	position: relative;
+	left:600px;
+}
+#err_msg .error{
+	padding:15px;
+	color:red;
+}
+
+/*Trang user quan lí tài khoản*/
+.col-xs-12.col-md-2.sidebar .nav.nav-sidebar li a{
+  color:#fff;
+}
+
+.col-xs-12.col-md-2.sidebar .nav.nav-sidebar li a:hover{
+  color:#000;
+}
+.nav.nav-sidebar legend{
+  color:white;
+}
+
+
+/*admin*/
+
+.col-xs-12.col-md-2.sidebar .nav.nav-sidebar li a{
+	color:#fff;
+}
+
+.col-xs-12.col-md-2.sidebar .nav.nav-sidebar li a:hover{
+	color:#000;
+}
+
+thead tr th{
+	background-color: #000;
+	color:white !important;
+}
+
+tbody tr:hover{
+	background-color: #3333FF;
+	color:white !important;
+}
+
+
+/*img content_center*/
+/*.col-md-8 .panel.panel-info .panel-body>.col-md-4{
+	width:500px !important;
+	height:500px !important;
+}*/

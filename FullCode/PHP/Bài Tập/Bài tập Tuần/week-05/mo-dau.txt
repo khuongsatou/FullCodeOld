@@ -1,0 +1,8 @@
+1. Tao CSDL ten: my_db
+
+2. Tao table ten: Persons, gom cac truong:
++ FirstName varchar(15)
++ LastName varchar(15)
++ Age int
+
+3. Insert 2 dong du lieu vao bang tren
