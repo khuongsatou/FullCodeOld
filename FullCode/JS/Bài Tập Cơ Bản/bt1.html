@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>La Kỳ Đạt</title>
+</head>
+<body>
+	<center>
+		<h3>Mời Nhập Phép Tính</h3>
+<form name=f>
+	<input name=a size=1px id=GiaTri1><pan id=ThongBao1></pan>
+	<input name=b size=1px id=Phep><pan id=ThongBao2></pan>
+	<input name=c size=1px id=GiaTri2><pan id=ThongBao3></pan>
+	<input type=button value="=" onclick="KiemTra()" size=1px>
+	<input name=number3 size=1px>
+</form>
+	<script type="text/javascript">
+		function KiemTra(){
+			var s1=parseInt(f.GiaTri1.value);
+			var s2=parseInt(f.GiaTri2.value);
+			var p=(f.b.value);
+					if(f.GiaTri1.value=="")
+						document.getElementById('ThongBao1').innerHTML="Cần Nhập Giá Trị";
+					if(f.GiaTri2.value=="")
+						document.getElementById('ThongBao3').innerHTML="Cần Nhập Giá Trị";
+					if(f.GiaTri1.value<0||f.GiaTri1.value>20)
+						document.getElementById('ThongBao1').innerHTML="Chỉ Được Nhập Từ 0 - 20";
+					else{	
+			switch (p) {
+				case "+":
+				f.number3.value=s1+s2;
+				
+					break;
+				case "-":
+				f.number3.value=s1-s2;
+				
+					break;
+					case "*":
+				f.number3.value=s1*s2;
+				
+					break;
+					case "/":
+				f.number3.value=s1/s2;
+				
+					break;
+					default:{
+						if(f.Phep.value!="+"||f.Phep.value!="-"||f.Phep.value!="*"||f.Phep.value!="/")
+						document.getElementById('ThongBao2').innerHTML="Chỉ Được Nhập + , - , * , / ";break;
+					}
+				}
+			}		
+		}
+</script>
+
+</center>
+</body>
+</html>

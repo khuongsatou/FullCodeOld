@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animal</title>
+</head>
+<body>
+	<script>
+		function Animal(name) {
+			
+			//Properties
+			this.type ="Animal";
+			this.name= name;
+			this.sayType=function () {
+				console.log("type-:" + this.type);
+			} 
+		
+		}
+
+		Animal.prototype.sayName = function () {
+			console.log("Name-:"+this.name);
+		}
+
+		function Dog(name) {
+			this.super_=Animal;
+			this.super_.call(this,name);
+			this.type = "Dog";
+			this.shout=function () {
+				console.log("shout: "+"GOOGOOGO!!!1");
+			}
+		}
+
+		//kế thừa 
+		intherits(Dog,Animal);
+
+		function intherits(child,parent) {
+			child.prototype =Object.create(parent.prototype,{
+				constructor:{
+					value: child,
+					enumerable:false,
+					writable:true,
+					configurable:true
+				}
+			});
+		}
+
+
+		//Main
+
+		MyDog = new Dog("Lucky");
+		MyDog.shout();
+		MyDog.sayType();
+		MyDog.sayName();
+
+
+	</script>
+</body>
+</html>

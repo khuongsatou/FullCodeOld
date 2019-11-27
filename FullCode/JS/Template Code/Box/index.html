@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box</title>
+</head>
+<body>
+	<script>
+		var enter="<br>";
+
+		this.myBox= function () {
+
+			//properties
+			this.text      ="";
+			this.atrr      ="";
+			
+			//method
+			this.createBox =createBox;
+
+			//build method
+			function createBox(atrr,text) {
+				var result;
+				var style=createStyle(atrr);
+
+				result ="<div style='"+style+"'>"+ text +"</div>";
+
+				return result;
+			}
+
+			function createStyle(atrr) {
+					var style ="";
+					style     += "width:"+atrr[0];
+					style     += ";height:"+atrr[1];
+					style     += ";background-color:"+atrr[2];
+					style     += ";color:"+atrr[3];
+					style     += ";line-height:"+atrr[4];
+					style     += ";text-align:"+atrr[5];
+					return style;
+			}
+
+		}
+
+		//Contructor class
+		Box= new myBox();
+		document.write(Box.createBox(["100px","100px","yellow","red","100px","center"],"box1") + enter);
+		document.write(Box.createBox(["200px","200px","blue","red","200px","center"],"box2") + enter);
+		document.write(Box.createBox(["100px","100px","green","red","100px","center"],"box3") + enter);
+
+	</script>
+	<style>
+		
+	</style>
+</body>
+</html>

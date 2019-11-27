@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>La Ky Dat</title>
+</head>
+<style>
+.a{
+	color:orange;
+	font-weight: bold;
+}
+.b{
+	text-align: right;
+}
+.c{
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+	color:blue;
+}
+.d{
+	width:20%;
+	height:5vh;
+	background-color: orange;
+	color:white;
+}
+</style>
+<body>
+	<form name=f>
+	<h2 class=a >Đặt Bàn</h2>
+	<select >
+		<option value="">Số Người</option>
+		<option value="">1-2</option>
+		<option value="">3-4</option>
+		<option value="">5-8</option>
+		<option value="">9-12</option>
+	</select>
+	<p></p>
+	<input name=Ten placeholder="Họ Tên" class=b>
+	<p></p>
+	<input name=sdt placeholder="Số Điện Thoại" class=b><pan id="ThongBao"></pan>
+	<p></p>
+	<input type="radio" name=XacNhan> <pan class=c>Xác Nhận Qua Gọi Điện Thoại</pan>
+	<p></p>
+	<input type="radio" name=XacNhan><pan class=c>Xác Nhận Qua SMS</pan>
+	<p></p>
+	<textarea placeholder="Ghi Chú" name=GhiChu></textarea>
+	<p></p>
+	<input type="checkbox"> Tôi Đã Đọc Các <a href="#">Qui Định</a>
+	<p></p>
+	<input type=button class=d value="Đặt Chỗ" onclick="KiemTra()">
+	<p></p>
+	Hotline : <pan class=c>1900 6044</pan>
+	<pan id="ThongBao2"
+	</form>
+	<script type="text/javascript">
+		function KiemTra(){
+			if(f.sdt.value=="")
+				document.getElementById('ThongBao').innerHTML="Chưa Nhập Số Điện Thoại";
+			if(isNaN(f.sdt.value)==true)
+				document.getElementById('ThongBao').innerHTML="Số Điện Thoại Phải Là Số";
+			if(f.sdt.value<10000000||f.sdt.value>9999999999)
+				document.getElementById('ThongBao').innerHTML="Số Điện Thoại Từ 8 - 10 Số";
+			else{
+				document.getElementById('ThongBao').innerHTML="";
+				//document.getElementById('ThongBao1').innerHTML="Họ Tên"+f.Ten.value;
+				//document.getElementById('ThongBao1').innerHTML="\nSDT"+f.sdt.value;
+				//document.getElementById('ThongBao1').innerHTML="\nXác Nhận"+f.XacNhan.value;
+				//document.getElementById('ThongBao1').innerHTML="Ghi Chú"+f.GhiChu.value;
+				
+			}
+		}
+	</script>
+</body>
+</html>

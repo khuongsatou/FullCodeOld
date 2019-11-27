@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var person = {
+  myFunction : function() {
+    return this.firstName +" -last- "+ this.lastName;
+  }
+};
+
+var person1 = {
+	 firstName  : "John",
+ 	 lastName   : "Doe",
+};
+
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.myFunction.call(person1);
+</script>
+</body>
+</html>

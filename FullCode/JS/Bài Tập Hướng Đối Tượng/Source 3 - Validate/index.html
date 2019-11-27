@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Object</title>
+</head>
+<body>
+	<script>
+		var enter="<br>";
+		this.myValidate = function (val1,val2) {
+			//properties
+			this.data       = val1;//pulic
+			var private     = val2;//private
+			
+			//Method
+			this.getPrivate = getPrivate;
+
+			//build method
+			function getPrivate() {
+				return private;
+			}
+
+		}
+
+		//khởi tạo 
+		Myobj = new myValidate("JavaScript",200);
+
+		document.write("Properties - data:" + Myobj.data+enter);
+		document.write("Properties - private:" + Myobj.getPrivate()+enter);
+
+
+	
+	</script>
+</body>
+</html>

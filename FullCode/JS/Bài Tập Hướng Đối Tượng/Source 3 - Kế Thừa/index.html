@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Object</title>
+</head>
+<body>
+	<script>
+		var enter="<br>";
+
+		//Kế thừa
+		this.myValidate = function () {
+			//properties
+			this.data    = "1";//pulic
+			// this.msg     = val2;//private
+			
+			//Method
+			this.getdata = getdata;
+			this.getmsg  = getmsg;
+
+			//build method
+			function getdata() {
+				return this.data;
+			}
+
+			function getmsg(val1) {
+				return this.msg = val1;
+			}
+
+		}
+
+		this.myValidateChild = function () {
+			myValidate.call(this);
+		}
+
+		//khởi tạo 
+		Myobj = new myValidateChild("JavaScript",200);
+
+		document.write("Properties - data:" + Myobj.getdata()+enter);
+		document.write("Properties - msg:" + Myobj.getmsg("JQuery")+enter);
+
+
+	
+	</script>
+</body>
+</html>

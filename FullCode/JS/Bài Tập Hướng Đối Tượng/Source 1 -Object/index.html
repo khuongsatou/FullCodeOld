@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Object</title>
+</head>
+<body>
+	<script>
+
+		var enter="<br>";
+		//c2
+		this.doituong2=function () {
+			var data1="day là van ban 2";
+			this.msg="Đây là msg";
+
+			this.getms=function getms() {
+				return this.msg;
+			}
+
+			this.getdata=getdata;//tường minh
+
+			function getdata() {
+				return data1;
+			}
+		}
+
+	
+		getdoituong = new doituong2();
+		document.write(getdoituong.getdata()+enter);
+		document.write(typeof getdoituong+enter);
+		document.write(getdoituong.getms()+enter);
+	
+	</script>
+</body>
+</html>

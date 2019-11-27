@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class JavaScipt+ inheris</title>
+</head>
+<body>
+	<script>
+		class Animal{
+			constructor(name){
+				this.type ="Animal";
+				this.name = name;
+			}
+
+			sayType(){
+				console.log("Type: "+this.type);
+			}
+
+			sayName(){
+				console.log("Name: "+this.name);
+			}
+
+		}
+
+		class Dog extends Animal{
+			constructor(name){
+				super(name);
+				this.type ="Dog";
+			}
+			shout(){
+					console.log("shout: "+"GOOGOGOOG!!!");
+			}
+		}
+
+
+		myDog= new Dog("Lucky");
+		myDog.shout();
+		myDog.sayType();
+		myDog.sayName();
+	</script>
+</body>
+</html>
