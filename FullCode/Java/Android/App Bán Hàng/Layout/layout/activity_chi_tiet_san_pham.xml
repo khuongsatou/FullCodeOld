@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChiTietSanPham">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarCTSanpham"
+        android:background="#810F0803"
+        app:titleTextColor="#fff"
+        app:title="Chi tiết sản phẩm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageViewSanPhamCT"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="150dp"
+            android:layout_height="170dp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#E2330E14"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:id="@+id/textViewTenSanPhamCT"
+                    android:text="Tên Sản phẩm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#9AF1076A"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/textViewGiaSanPhamCT"
+                    android:text="Giá Sản phẩm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:textAlignment="center"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    android:background="@drawable/spinner"
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                </Spinner>
+                <Button
+                    android:layout_margin="3dp"
+                    android:textColor="#DDEBEEF5"
+                    android:background="#DFFF3333"
+                    android:id="@+id/buttonDatMuaSanPhamCT"
+                    android:textSize="10sp"
+                    android:text="Đặt Mua"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Mô Tả Sản Phẩm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:textColor="#030303"
+                android:layout_marginTop="10dp"
+                android:text="Content"
+                android:id="@+id/textViewMoTaSanPhamCT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+       </LinearLayout>
+
+</LinearLayout>

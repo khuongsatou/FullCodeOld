@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  <Button 
+  	android:layout_width="250dp"
+  	android:layout_height="wrap_content"
+  	android:text="Nhập Dữ Liệu"
+  	android:textSize="20dp"
+  	android:id="@+id/importdata"
+  	android:padding="40dp"
+  />
+  <Button 
+  	android:layout_width="250dp"
+  	android:layout_height="wrap_content"
+  	android:text="Bắt Đầu"
+  	android:textSize="20dp"
+  	android:id="@+id/start"
+  	android:padding="40dp"
+  />
+</LinearLayout>

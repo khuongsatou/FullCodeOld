@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongTinKhachHangActivity">
+    <LinearLayout
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#03d"
+            android:textSize="25sp"
+            android:text="Thông Tin Khách Hàng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            android:background="#DDDD06"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:id="@+id/editTextTenKhachHang"
+                android:hint="Nhập Tên Khách Hàng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_margin="5dp"
+                android:inputType="phone"
+                android:id="@+id/editTextSoDienThoai"
+                android:hint="Nhập Số Điện Thoại Khách Hàng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textColorHint="#F1EBEB"
+                android:layout_margin="5dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/editTextEmail"
+                android:hint="Nhập Email Khách Hàng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="70dp"
+                android:background="#DA1FD61F"
+                android:textColor="#110303"
+                android:textSize="30sp"
+                android:id="@+id/buttonXacNhan"
+                android:text="Xác Nhận"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+
+                android:background="#DA0EF00E"
+                android:textColor="#141313"
+                android:textSize="30sp"
+                android:id="@+id/buttonTroVe"
+                android:text="Trở Về"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

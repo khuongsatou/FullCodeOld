@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#2196F3">
+
+            <ImageButton
+                android:id="@+id/btnimgdown"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#3F51B5"
+                android:onClick="downscore"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+
+            <ImageButton
+                android:id="@+id/btnimgup"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#3F51B5"
+                android:onClick="upscore"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+
+            <TextView
+                android:id="@+id/txtscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:text="0"
+                android:textColor="#FFEB3B"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:text="Team1"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#63F169">
+
+            <ImageButton
+                android:id="@+id/btnimgdown1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#D81B60"
+                android:onClick="downscore"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+
+            <ImageButton
+                android:id="@+id/btnimgup1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#D81B60"
+                android:onClick="upscore"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+
+            <TextView
+                android:id="@+id/txtscore1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:text="0"
+                android:textColor="#3949AB"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtteam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:text="Team2"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

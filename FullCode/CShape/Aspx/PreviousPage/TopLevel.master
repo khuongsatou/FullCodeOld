@@ -1,0 +1,48 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TopLevel.master.cs" Inherits="TopLevel" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+ <form id="form1" runat="server">
+<table style="width:100%;">
+        <tr>
+            <td align="right" colspan="3">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/AdvWorksLogo.gif" />
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10%">
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/images/AdvWorksSideBar.gif" />
+            </td>
+            <td valign="top">
+        <asp:ContentPlaceHolder id="pageContent" runat="server">
+            
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            
+        </asp:ContentPlaceHolder>
+            </td>
+            <td style="width: 10%">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" colspan="3">
+                <asp:Label ID="Label1" runat="server" 
+                    Text="&lt;b&gt;Copyright&amp;copy;2011@AdventureWork.com&lt;/b&gt;"></asp:Label>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
